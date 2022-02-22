@@ -1,5 +1,5 @@
 public class Main {
-
+    public static void main(String[] args) {
 
         Faerie creatures[] = new Faerie[5];
         creatures[0] = new Fay("One", 12);
