@@ -1,4 +1,4 @@
-public class MyArrayDataException extends NumberFormatException {
+public class MyArrayDataException extends Exception {
 
     public MyArrayDataException(String message) {
         super(message);
