@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void main(String[] args) throws MyArraySizeException {
+    public static void main(String[] args) {
 
         String[][] strArray1 = {
                 {"1", "2", "3", "4"},
