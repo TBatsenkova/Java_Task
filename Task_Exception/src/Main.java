@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void main(String[] args) throws MyArraySizeException {
+    public static void main(String[] args)  {
 
         String[][] strArray1 = {
                 {"1", "2", "3", "4"},
@@ -26,7 +26,7 @@ public class Main {
 
         String[][] strArray4 = {
                 {"1", "2", " ", "4"},
-                {"1", "2", "3", "4"},
+                {"a", "2", "3", "4"},
                 {"1", "8", "3", "4"},
                 {"1", "2", "3", "4"}
         };
@@ -42,24 +42,30 @@ public class Main {
         int sum = 0;
 
         try {
-            if (strArray.length != 4)
+            if (strArray.length != 4) {
                 throw new MyArraySizeException("Количество строк не равно 4");
-            for (int i = 0; i < strArray.length; i++) {
-                if (strArray[i].length != 4 )
+            }
+            for (String[] array : strArray) {
+                if (array.length != 4) {
                     throw new MyArraySizeException("Количество столбцов не равно 4");
-                for (int j = 0; j < strArray[i].length; j++) {
-                    if (! strArray[i][j].matches("[0-9]+")) {
+                }
+            }
+        } catch (MyArraySizeException e) {
+            System.out.println(e);
+        }
+
+        for (int i = 0; i < strArray.length; i++) {
+            for (int j = 0; j < strArray[i].length; j++) {
+                try {
+                    if (!strArray[i][j].matches("[0-9]+")) {
                         throw new MyArrayDataException(String.format("Неверное значение '%s' в ячейке [%d, %d]", strArray[i][j], i, j));
                     }
                     sum += Integer.parseInt(strArray[i][j]);
+                } catch (MyArrayDataException e) {
+                    System.out.println(e);
                 }
             }
-            System.out.println("Сумма всех элементов массива: " + sum);
-
-        } catch (MyArraySizeException e) {
-            System.out.println(e);
-        } catch (MyArrayDataException e) {
-            System.out.println(e);
         }
+        System.out.println("Сумма всех элементов массива: " + sum);
     }
 }
