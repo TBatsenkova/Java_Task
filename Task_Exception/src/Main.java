@@ -17,8 +17,8 @@ public class Main {
         };
 
         String[][] strArray3 = {
-                {"1", "2", "3", "4"},
-                {"1", "2", "3", "4"},
+                {"a", "2", "3", "4"},
+                {"1", "2", "4"},
                 {"1", "2", "1", "1"},
                 {"1", "2", "3", "4"},
                 {"1", "2", "3", "4"}
@@ -31,13 +31,14 @@ public class Main {
                 {"1", "2", "3", "4"}
         };
 
-           try {
-               arrSum(strArray1);
-           } catch (MyArraySizeException e) {
-               System.out.println(e);
-           } catch (MyArrayDataException e) {
-               System.out.println(e);
-           }
+
+        try {
+            arrSum(strArray1);
+        } catch (MyArraySizeException e) {
+            System.out.println(e);
+        } catch (MyArrayDataException e) {
+            System.out.println(e);
+        }
 
         try {
             arrSum(strArray2);
@@ -83,6 +84,6 @@ public class Main {
 
             }
         }
-        System.out.println("Сумма всех элементов массива: " + sum);
+        System.out.println("Сумма всех элементов: " + sum);
     }
 }
