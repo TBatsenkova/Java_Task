@@ -1,6 +1,10 @@
 public class Main {
 
+<<<<<<< HEAD
     public static void main(String[] args)  {
+=======
+    public static void main(String[] args) {
+>>>>>>> 3be3a16166eff9ef7bf2c8fd53abd1dc7624a900
 
         String[][] strArray1 = {
                 {"1", "2", "3", "4"},
