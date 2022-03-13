@@ -23,6 +23,6 @@ public class Main {
         //закрываем потоки
         out.close();
         in.close();
-
+        file1.delete();
     }
 }
