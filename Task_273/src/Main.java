@@ -14,5 +14,6 @@ public class Main {
         System.out.println("Можно писать? - " + file1.canWrite());
         System.out.println("Запрет редактирования  " + file1.setReadOnly());
         System.out.println("Можно писать? - " + file1.canWrite());
+        file1.delete();//удаляем ненужный файл
     }
 }

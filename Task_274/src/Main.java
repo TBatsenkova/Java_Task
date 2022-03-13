@@ -9,5 +9,6 @@ public class Main {
         System.out.println("Свободно " + file1.getTotalSpace() + " КБ");
         System.out.println("Свободно для записи " + file1.getFreeSpace() + " КБ");
         System.out.println("Время последней модификации " + file1.lastModified() + "КБ");
+        file1.delete();//удаляем ненужный файл
     }
 }

@@ -9,10 +9,12 @@ public class Main {
         System.out.println("New Dir - это каталог? - " + dir.isDirectory());
         File newDir = new File("New Directory");
         System.out.println("Переименовываем New Dir в New Directory - " + dir.renameTo(newDir));
-        File newDirec = new File("New Direc");
+        File newDirec = new File("New Directory");
         newDirec.mkdir();
         System.out.println("Папка New Direc существует? - " + newDirec.exists());
         System.out.println("New Direc удален? - " + newDirec.delete());
+        System.out.println("New Dir удален? - " + newDir.delete());
+        System.out.println("New Directory удален? - " + dir.delete());
 
 
 
