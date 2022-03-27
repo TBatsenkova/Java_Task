@@ -29,10 +29,10 @@ public class Figure <T, E>{
     public static void main(String[] args) {
         Figure<Circle, Integer> circleFigure = new Figure<>(new Circle(8), 5);
         Figure<Rectangle, Integer> rectangleFigure = new Figure<>(new Rectangle(5, 4), 12);
-        System.out.println(circleFigure.figure.getClass().getName() + ", " + circleFigure.quantity + " шт");
-        System.out.println("Общая площадь " + circleFigure.figure.getSquare() * circleFigure.quantity);
-        System.out.println(rectangleFigure.figure.getClass().getName() + ", " + rectangleFigure.quantity + " шт");
-        System.out.println("Общая площадь " + rectangleFigure.figure.getSquare() * rectangleFigure.quantity);
+        System.out.println(circleFigure.getFigure().getClass().getName() + ", " + circleFigure.getQuantity() + " шт");
+        System.out.println("Общая площадь " + circleFigure.getFigure().getSquare() * circleFigure.getQuantity());
+        System.out.println(rectangleFigure.getFigure().getClass().getName() + ", " + rectangleFigure.getQuantity() + " шт");
+        System.out.println("Общая площадь " + rectangleFigure.getFigure().getSquare() * rectangleFigure.getQuantity());
 
     }
 }

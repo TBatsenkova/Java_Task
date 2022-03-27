@@ -1,10 +1,5 @@
 public class Main {
-
-<<<<<<< HEAD
-    public static void main(String[] args)  {
-=======
     public static void main(String[] args) {
->>>>>>> 3be3a16166eff9ef7bf2c8fd53abd1dc7624a900
 
         String[][] strArray1 = {
                 {"1", "2", "3", "4"},
@@ -29,7 +24,7 @@ public class Main {
         };
 
         String[][] strArray4 = {
-                {"1", "2", " ", "4"},
+                {"1", "2", "a", "4"},
                 {"a", "2", "3", "4"},
                 {"1", "8", "3", "4"},
                 {"1", "2", "3", "4"}
