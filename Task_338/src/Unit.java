@@ -28,7 +28,8 @@ public class Unit {
     }
 
     public void fight(Unit enemy) {
-        System.out.println(getName() + " сражается, противник- " + enemy.getName());
+        System.out.println(getName() + " cила " + getStr() +
+                " сражается, противник- " + enemy.getName() + " cила " + getStr());
     }
 
 
